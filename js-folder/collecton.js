@@ -65,7 +65,7 @@ window.addEventListener('resize', () => {
 
 // mouse navigation 
 document.addEventListener("DOMContentLoaded", () => {
-  const scrollBtn = document.getElementById("look-01");
+  const scrollBtn = document.getElementById("next-section");
 
   if (!scrollBtn) return;
 

@@ -32,12 +32,15 @@ body {
     font-size: 1.2rem;
     letter-spacing: 0.3rem;
     font-weight: 300;
+    color: #afabab;
 }
 
 .collection-title {
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
     opacity: 0.6;
+    color: #afabab;
+
 }
 
 /* Background Video/Image [cite: 10] */
@@ -100,7 +103,7 @@ body {
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    border: 1px solid #8C8C8A;
+    border: 1px solid #C9A24D;
     width: 50%;
     border-radius: 40px;
 }
@@ -111,7 +114,7 @@ body {
     letter-spacing: 0.15rem;
     text-transform: uppercase;
     /* color: var(--washed-black) !important; */
-    color: #afabab!important;
+    color: #C9A24D !important;
 
     text-decoration: none;
     white-space: nowrap; /* Prevents text wrapping */
@@ -190,7 +193,7 @@ body {
 .mouse {
     width: 24px;
     height: 42px;
-    border: 2px solid var(--washed-black);
+    border: 2px solid #afabab;
     border-radius: 30px;
     position: relative;
     opacity: 0.7;
@@ -205,7 +208,7 @@ body {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--washed-black);
+    background-color: #afabab;
     border-radius: 50%;
     animation: mouse-scroll 2s infinite;
 }
