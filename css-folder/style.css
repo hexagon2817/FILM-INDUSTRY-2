@@ -32,14 +32,14 @@ body {
     font-size: 1.2rem;
     letter-spacing: 0.3rem;
     font-weight: 300;
-    color: #afabab;
+    color: #C9A24D;
 }
 
 .collection-title {
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
     opacity: 0.6;
-    color: #afabab;
+    color: #C9A24D;
 
 }
 
@@ -193,7 +193,7 @@ body {
 .mouse {
     width: 24px;
     height: 42px;
-    border: 2px solid #afabab;
+    border: 2px solid #C9A24D;
     border-radius: 30px;
     position: relative;
     opacity: 0.7;
@@ -208,7 +208,7 @@ body {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #afabab;
+    background-color: #C9A24D;
     border-radius: 50%;
     animation: mouse-scroll 2s infinite;
 }
