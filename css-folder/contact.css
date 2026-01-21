@@ -25,7 +25,7 @@ body {
     width: 100%;
     max-width: 1200px; /* Maintains large margins on wide screens */
     opacity: 0;
-    visibility: hidden;
+    /* visibility: hidden; */
     transition: opacity 1.2s cubic-bezier(0.25, 0.1, 0.25, 1), 
                 visibility 1.2s;
     padding: 40px 20px; /* Top padding for breathing room */
@@ -63,6 +63,15 @@ body {
     text-decoration: none;
     white-space: nowrap; /* Prevents text wrapping */
 }
+
+
+@media (max-width: 1024px) {
+  .navbar-nav {
+    border: 1px solid #C9A24D;
+    width: 70%;
+  }
+}
+
 
 /* SMALL SCREEN REFINEMENTS */
 @media (max-width: 768px) {
