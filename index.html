@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css-folder/style.css" />
+  </head>
+  <body class="bg-neutral">
+    <div
+      id="nav-trigger"
+      style="position: fixed; top: 0; width: 100%; height: 80px; z-index: 1001"
+    ></div>
+
+    <nav id="main-nav">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="./collection.html">Collection</a>
+        <a class="nav-link" href="./atelier.html">Atelier</a>
+        <a class="nav-link" href="./philosophy.html">Philosophy</a>
+        <a class="nav-link" href="./contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section
+        class="hero-section container-fluid d-flex align-items-end justify-content-start"
+      >
+        <div class="hero-content p-5">
+          <h1 class="brand-name">BRAND NAME</h1>
+          <p class="collection-title">COLLECTION N°01</p>
+        </div>
+
+        <div class="hero-background">
+          <video autoplay muted loop playsinline id="hero-video">
+            <source
+              src="./assets/colorful-spools-of-thread-in-mid-air-2023-video.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <!-- mouse animation  -->
+          <div class="scroll-indicator">
+            <div class="mouse"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- collection preview section  -->
+      <section id="preview-section" class="preview-viewport">
+  <div class="preview-inner-container">
+    
+    <div class="preview-content-box">
+      <div class="vertical-title-wrapper">
+        <span class="vertical-line"></span>
+        <h2 class="preview-title-large">PRÉLUDE</h2>
+      </div>
+      
+      <div class="preview-text-details">
+        <p class="preview-subtitle">COLLECTION N°01</p>
+        <p class="preview-description">
+          A study in the weight of silk and the silence of the atelier.
+          Before the collection unfolds, we observe the raw intent of form.
+        </p>
+        <div class="preview-action">
+          <a href="./collection.html" class="explore-btn">
+            VIEW THE LOOKS
+            <span class="btn-arrow"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="preview-image-box">
+      <div class="image-reveal-wrapper">
+        <img
+          src="https://jdinstituteoffashiontechnology.b-cdn.net/wp-content/uploads/2021/07/Types-of-Fashion-Photography-Thumbnail-770x400.jpg"
+          alt="Couture Detail Preview"
+          class="preview-img-main"
+        />
+        <div class="image-meta">EST. 2026 / ATELIER 01</div>
+      </div>
+    </div>
+
+    <div class="side-navigation-preview">
+      <span class="nav-label">SCROLL TO DISCOVER</span>
+      <div class="nav-line-glow"></div>
+    </div>
+  </div>
+</section>
+
+      <!-- ATELIER / CRAFT section  -->
+      <section id="atelier-section" class="atelier-viewport">
+        <div class="atelier-container">
+          <div class="atelier-col main-feature">
+            <div class="atelier-item">
+              <img
+                src="https://silvergumtype.com/wp-content/uploads/2019/11/menswear-fashion-editorial-lighting-fashion-photographer-james-nader-menshoots_14.jpg"
+                alt="Texture"
+              />
+              <div class="atelier-caption-overlay">I. THE RAW SURFACE</div>
+            </div>
+          </div>
+
+          <div class="atelier-col stacked-gallery">
+            <div class="atelier-item item-top">
+              <img
+                src="https://d28clw9klscyzj.cloudfront.net/legacy/assets/2021-03-02/files/04_-_MODEL_COMFORTABLE.jpg"
+                alt="Hands"
+              />
+              <div class="atelier-caption-overlay">II. PRECISION</div>
+            </div>
+            <div class="atelier-item item-bottom">
+              <img
+                src="https://images.unsplash.com/photo-1558603668-6570496b66f8?q=80&w=1000&auto=format&fit=crop"
+                alt="Fabric"
+              />
+              <div class="atelier-caption-overlay">III. TEXTURE</div>
+            </div>
+          </div>
+
+          <div class="atelier-col varied-gallery">
+            <div class="atelier-item item-tall">
+              <img
+                src="https://webneel.com/daily/sites/default/files/images/daily/07-2013/16-femina-tribal-beauty-fashion-photography-by-vishesh-verma.jpg"
+                alt="Model"
+              />
+              <div class="atelier-caption-overlay">IV. THE FORM</div>
+            </div>
+            <div class="atelier-item item-small">
+              <img
+                src="https://webneel.com/daily/sites/default/files/images/daily/03-2021/6-beautiful-woman-portrait-photo-kosari.jpg"
+                alt="Detail"
+              />
+              <div class="atelier-caption-overlay">V. THE FINISH</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="atelier-invitation ">
+          <a href="philosophy.html" class="nav-trigger">
+            <div class="invitation-text">
+              <span class="word">THE</span>
+              <span class="word">THOUGHT</span>
+              <span class="word">BEYOND</span>
+            </div>
+            <div class="nav-line-animation"></div>
+          </a>
+        </div>
+      </section>
+
+      <!-- philosophy section  -->
+      <section
+        id="philosophy-section"
+        class="philosophy-viewport container-fluid p-0"
+      >
+        <div class="row g-0 h-100">
+          <div class="col-md-6 h-100">
+            <div class="philosophy-image-frame h-100">
+              <img
+                src="https://www.gngmodels.com/wp-content/uploads/2020/08/PB__6407-Final.jpg"
+                class="philosophy-img"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center bg-bone"
+          >
+            <div class="philosophy-text-container">
+              <h2 class="philosophy-statement">
+                The silhouette is a silent dialogue between the fabric and the
+                soul.
+              </h2>
+
+              <div class="philosophy-values mt-4">
+                <p>
+                  Our practice rejects the industrial pace in favor of
+                  permanence. We believe every stitch is a deliberate act of
+                  preservation, honoring the architectural form of the human
+                  spirit.
+                </p>
+              </div>
+
+              <div class="philosophy-nav mt-5">
+                <a href="#contact" class="nav-invitation">
+                  <span class="nav-text">REQUEST ACCESS</span>
+                  <div class="nav-line-animation"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer class="couture-footer-v2 container-fluid">
+      <div
+        class="container-fluid h-100 d-flex flex-column justify-content-between px-5"
+      >
+        <div class="row pt-3 md-pt-5 foote-title">
+          <div class="col-md-6">
+            <h3 class="footer-statement">AN UNINTERRUPTED DIALOGUE.</h3>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="mailto:access@brand.com" class="footer-cta-link"
+              >INITIATE ENQUIRY —</a
+            >
+          </div>
+        </div>
+
+        <div class="row py-3">
+          <div class="col-12 text-center">
+            <div class="footer-logo-zone">
+              <h1 class="footer-brand-logo">
+                M A I S O N &nbsp; D E &nbsp; C O U T U R E
+              </h1>
+
+              <div class="footer-pulse-container mt-4">
+                <span class="pulse-text">PARIS</span>
+                <div class="pulse-ring"></div>
+                <span class="pulse-text">LONDON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pb-4 align-items-end">
+          <div class="col-md-3">
+            <p class="meta-label">LEGAL</p>
+            <a href="#" class="meta-link">Privacy & Terms</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <a href="#home" class="elevate-trigger">
+              <span class="elevate-text">ELEVATE TO TOP</span>
+              <div class="elevate-bar-footer"></div>
+            </a>
+          </div>
+          <div class="col-md-3 text-md-end">
+            <p class="meta-label">ORIGIN</p>
+            <p class="meta-value">Est. 2026 — Atelier No. 01</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js-folder/app.js"></script>
+  </body>
+</html>

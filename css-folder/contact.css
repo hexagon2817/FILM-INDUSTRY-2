@@ -1,0 +1,496 @@
+:root {
+    --bone: #151516;
+    --washed-black: #1a1a1a;
+    --transition-slow: 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+body {
+    background-color: var(--bone); /* Neutral palette [cite: 28] */
+    color: var(--washed-black);
+    font-family: 'Times New Roman', serif; /* One font family only [cite: 28] */
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* navbar  */
+
+/* Navbar Hidden by default [cite: 26] */
+/* Navigation Hidden State */
+/* FIXED TOP NAVIGATION */
+#main-nav {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Anchor to center */
+    transform: translateX(-50%); /* Offset for perfect center */
+    width: 100%;
+    max-width: 1200px; /* Maintains large margins on wide screens */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                visibility 1.2s;
+    padding: 40px 20px; /* Top padding for breathing room */
+    z-index: 1000;
+}
+
+/* REVEAL STATE */
+#main-nav.reveal {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* HORIZONTAL LIST FOR ALL SCREENS */
+.navbar-nav {
+    display: flex !important;
+    flex-direction: row !important; /* Forces horizontal line */
+    justify-content: center !important; /* Centers items */
+    gap: 2rem; /* Consistent spacing between items */
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+/* NAVIGATION LINKS */
+.nav-link {
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    /* color: var(--washed-black) !important; */
+    color: #afabab!important;
+
+    text-decoration: none;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* SMALL SCREEN REFINEMENTS */
+@media (max-width: 768px) {
+    #main-nav {
+        padding: 30px 10px; /* Slightly tighter top margin for mobile */
+    }
+    .navbar-nav {
+        gap: 1rem; 
+    }
+    .nav-link {
+        font-size: 0.65rem; /* Smaller text for mobile elegance */
+    }
+}
+
+@media (max-width: 768px) {
+
+  .navbar-nav {
+    display: grid !important;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    column-gap: 1.5rem;
+    row-gap: 0.1rem;
+    text-align: center;
+  }
+
+  /* Center the second row as a pair */
+  .navbar-nav .nav-link:nth-child(4) {
+    grid-column: 2;
+  }
+
+  .navbar-nav .nav-link:nth-child(5) {
+    grid-column: 3;
+  }
+  
+}
+
+
+#nav-trigger {
+    pointer-events: auto;
+}
+
+#main-nav.reveal ~ #nav-trigger,
+#nav-trigger.nav-disabled {
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact section  */
+.contact-viewport {
+    background-color: #0d0d0e;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 120px 8vw;
+}
+
+.contact-container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    gap: 12vw;
+    align-items: flex-start;
+}
+
+/* FORM SIDE */
+.contact-form-side {
+    flex: 1.2;
+}
+
+.contact-tag {
+    font-size: 0.6rem;
+    letter-spacing: 0.5rem;
+    color: #555;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    font-family: 'Times New Roman', serif;
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.atelier-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+    transition: border-color 0.4s ease;
+}
+
+.input-group:focus-within {
+    border-color: #fff;
+}
+
+.input-group label {
+    font-size: 0.55rem;
+    letter-spacing: 0.3rem;
+    color: #555;
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    padding: 5px 0;
+    font-family: inherit;
+}
+
+.input-group select {
+    appearance: none;
+    cursor: pointer;
+}
+
+/* BUTTON */
+.submit-btn {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 0.7rem;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    padding: 15px 0;
+    margin-top: 20px;
+    transition: letter-spacing 0.4s ease;
+}
+
+.submit-btn:hover {
+    letter-spacing: 0.4rem;
+    color: #afabab;
+}
+
+/* INFO SIDE */
+.contact-info-side {
+    flex: 0.8;
+    padding-top: 100px;
+    position: relative;
+}
+
+.info-block {
+    margin-bottom: 60px;
+}
+
+.info-label {
+    display: block;
+    font-size: 0.55rem;
+    letter-spacing: 0.3rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.info-value {
+    color: #afabab;
+    font-size: 0.85rem;
+    line-height: 1.8;
+    letter-spacing: 0.05rem;
+}
+
+.ghost-text {
+    position: absolute;
+    bottom: -50px;
+    right: -20px;
+    font-size: 8vw;
+    font-family: 'Times New Roman', serif;
+    color: rgba(255, 255, 255, 0.02);
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .contact-container { flex-direction: column; gap: 80px; }
+    .contact-info-side { padding-top: 0; width: 100%; }
+    .contact-title { font-size: 2.5rem; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section  */
+
+.couture-footer-v2 {
+    background-color: #1a1a1a; /* Darker variant for a strong "grounding" finish */
+    color: #f5f5f2;
+    min-height: 10vh; /* Taller footer for more drama */
+    position: relative;
+    font-family: 'Times New Roman', serif;
+}
+
+.footer-statement {
+    font-size: 0.9rem;
+    letter-spacing: 0.4rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.footer-cta-link {
+    color: #f5f5f2;
+    text-decoration: none;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    transition: letter-spacing 0.5s ease;
+}
+
+.footer-cta-link:hover {
+    letter-spacing: 0.4rem;
+}
+
+/* KINETIC SIGNATURE: Tells the user the Maison is active */
+.footer-pulse-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pulse-text {
+    font-size: 0.6rem;
+    letter-spacing: 0.5rem;
+    opacity: 0.4;
+}
+
+.pulse-ring {
+    width: 8px;
+    height: 8px;
+    background: #f5f5f2;
+    border-radius: 50%;
+    position: relative;
+    /* Animation: Subtle Maison heart-beat */
+    animation: maisonPulse 3s infinite;
+}
+
+@keyframes maisonPulse {
+    0% { transform: scale(1); opacity: 1; }
+    70% { transform: scale(4); opacity: 0; }
+    100% { transform: scale(1); opacity: 0; }
+}
+
+/* BOTTOM META SECTION */
+.meta-label {
+    font-size: 0.5rem;
+    letter-spacing: 0.2rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.meta-link, .meta-value {
+    font-size: 0.6rem;
+    color: #f5f5f2;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+/* ELEVATE ANIMATION: Tells you to go back */
+.elevate-trigger {
+    text-decoration: none;
+    color: #f5f5f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elevate-text {
+    font-size: 0.5rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 10px;
+    opacity: 0.5;
+    margin-right: 20px;
+}
+
+.elevate-bar-footer {
+    width: 1px;
+    height: 30px;
+    background: #f5f5f2;
+    margin-right: 20px;
+    animation: slideUp 2.5s infinite ease-in-out;
+}
+
+@keyframes slideUp {
+    0% { transform: scaleY(0); transform-origin: bottom; }
+    50% { transform: scaleY(1); transform-origin: bottom; }
+    51% { transform: scaleY(1); transform-origin: top; }
+    100% { transform: scaleY(0); transform-origin: top; }
+}
+
+
+
+
+
+
+/* MOBILE FIRST (≤ 576px) */
+@media (max-width: 576px) {
+
+  .couture-footer-v2 {
+    /* padding: 40px 20px; */
+    text-align: center;
+  }
+
+  /* TOP ROW */
+  .footer-statement {
+    font-size: 0.7rem;
+    letter-spacing: 0.25rem;
+    /* margin-bottom: 20px; */
+  }
+
+  .footer-cta-link {
+    font-size: 0.6rem;
+    letter-spacing: 0.15rem;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  /* LOGO SECTION */
+  .footer-brand-logo {
+    font-size: 1.1rem;
+    letter-spacing: 0.25rem;
+    line-height: 1.6;
+  }
+
+  /* PULSE AREA */
+  .footer-pulse-container {
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .pulse-text {
+    font-size: 0.5rem;
+    letter-spacing: 0.3rem;
+  }
+
+  /* META ROW */
+  .meta-label {
+    font-size: 0.45rem;
+    margin-top: 13px;
+    margin-right: 13px
+  }
+
+  .meta-link,
+  .meta-value {
+    font-size: 0.55rem;
+    margin-right: 23px;
+    margin-bottom: -10px;
+  }
+
+  /* ELEVATE BUTTON */
+  .elevate-text {
+    font-size: 0.45rem;
+    letter-spacing: 0.25rem;
+  }
+
+  .elevate-bar-footer {
+    height: 20px;
+  }
+  
+}
+
+
+
+
+
+/* TABLET FIXES (≤ 768px) */
+@media (max-width: 768px) {
+
+  .footer-statement {
+    letter-spacing: 0.3rem;
+  }
+
+  .footer-brand-logo {
+    font-size: 1.4rem;
+  }
+
+  .footer-pulse-container {
+    gap: 30px;
+  }
+
+}
+
+
+
+
+
+
+

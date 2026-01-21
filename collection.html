@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css-folder/collection.css" />
+  </head>
+  <body>
+    <div
+      id="nav-trigger"
+      style="position: fixed; top: 0; width: 100%; height: 80px; z-index: 1001"
+    ></div>
+
+    <nav id="main-nav">
+      <div class="navbar-nav">
+        <a class="nav-link" href="./index.html">Home</a>
+        <a class="nav-link" href="./collection.html">Collection</a>
+        <a class="nav-link" href="./atelier.html">Atelier</a>
+        <a class="nav-link" href="./philosophy.html">Philosophy</a>
+        <a class="nav-link" href="#">Contact</a>
+      </div>
+    </nav>
+    <main>
+      <!-- hero section  -->
+      <section class="collection-hero">
+        <div class="hero-image-overlay">
+          <img
+            src="https://www.designyourway.net/blog/wp-content/uploads/2023/11/43-beautiful-examples-of-fashion-photography.jpg"
+            alt="Collection Atmosphere"
+            class="hero-bg-img"
+          />
+        </div>
+
+        <div class="hero-interface container-fluid d-flex align-items-end pb-5">
+          <div class="row w-100 mb-4 px-md-4">
+            <div class="col-md-6 text-start">
+              <div class="hero-text-block">
+                <span class="collection-meta">SERIES 01 — 2026</span>
+                <h1 class="collection-title">SILENT ARCHITECTURE</h1>
+              </div>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-md-end align-items-end">
+              <div class="hero-scroll-invite">
+                <span class="scroll-label">EXPLORE LOOKS</span>
+                <div class="scroll-line-horizontal"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mouse animation  -->
+        <div class="scroll-indicator">
+          <div class="mouse"></div>
+        </div>
+      </section>
+
+      <!-- view-port section  -->
+      <!-- look-1  -->
+      <section class="look-viewport" id="look-01">
+        <div class="main-visual-frame" onclick="toggleDetails('look-01')">
+          <div class="image-inner">
+            <img
+              src="https://d28clw9klscyzj.cloudfront.net/legacy/assets/2021-03-02/files/04_-_MODEL_COMFORTABLE.jpg"
+              alt="Look 01 Full View"
+              class="main-img"
+            />
+
+            <div class="look-caption">
+              <span class="l-num">01</span>
+              <span class="l-mat">PRESSED WOOL / RAW SILK</span>
+            </div>
+          </div>
+
+          <!-- <div class="interact-prompt">VIEW DETAIL —</div> -->
+        </div>
+
+        <div class="detail-drawer">
+          <div class="drawer-content">
+            <button
+              class="close-drawer"
+              onclick="toggleDetails('look-01')"
+              style="color: #afabab"
+            >
+              CLOSE [X]
+            </button>
+
+            <!-- <div class="detail-media">
+                <img src="look-01-macro.jpg" alt="Texture Detail" class="macro-img">
+            </div> -->
+
+            <div class="detail-narrative" style="color: #faf7f7 !important">
+              <p>
+                A study in architectural softness, this piece centers on the
+                juxtaposition of structured wool and ethereal silk. The internal
+                framework is entirely hand-canvassed, allowing the garment to
+                hold its silhouette while responding to the wearer’s movement.
+                Each seam is bound in bias-cut silk for a seamless finish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- look-2 -->
+      <section class="look-viewport mirrored" id="look-02">
+        <div class="detail-drawer drawer-left">
+          <div class="drawer-content">
+            <button
+              class="close-drawer"
+              onclick="toggleDetails('look-02')"
+              style="color: #afabab"
+            >
+              CLOSE [X]
+            </button>
+
+            <!-- <div class="detail-media">
+                <img src="look-02-macro.jpg" alt="Silk Texture Detail" class="macro-img">
+            </div> -->
+
+            <div class="detail-narrative">
+              <p>
+                A transition into fluid weightlessness. This silhouette utilizes
+                bias-cut sand-washed silk to create a garment that flows like
+                liquid against the form. The internal structure is reduced to
+                minimalist silk-taped seams, emphasizing a sense of unburdened
+                luxury and organic movement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-visual-frame" onclick="toggleDetails('look-02')">
+          <div class="image-inner">
+            <img
+              src="https://d28clw9klscyzj.cloudfront.net/legacy/assets/2021-03-02/files/04_-_MODEL_COMFORTABLE.jpg"
+              alt="Look 02 Full View"
+              class="main-img"
+            />
+          </div>
+
+          <div class="look-caption text-end">
+            <span class="l-num">02</span>
+            <span class="l-mat">SAND-WASHED SILK / BIAS CUT</span>
+          </div>
+
+          <!-- <div class="interact-prompt left-prompt">— VIEW DETAIL</div> -->
+        </div>
+      </section>
+
+      <!-- look-3  -->
+      <section class="look-viewport" id="look-03">
+        <div class="main-visual-frame" onclick="toggleDetails('look-03')">
+          <div class="image-inner">
+            <img
+              src="https://d28clw9klscyzj.cloudfront.net/legacy/assets/2021-03-02/files/04_-_MODEL_COMFORTABLE.jpg"
+              alt="Look 03 Full View"
+              class="main-img"
+              style="cursor: pointer"
+            />
+          </div>
+
+          <div class="look-caption">
+            <span class="l-num">03</span>
+            <span class="l-mat">ARCHITECTURAL TWEED / SILK ORGANZA</span>
+          </div>
+
+          <!-- <div class="interact-prompt">VIEW CONSTRUCTION —</div> -->
+        </div>
+
+        <div class="detail-drawer">
+          <div class="drawer-content">
+            <button
+              class="close-drawer"
+              onclick="toggleDetails('look-03')"
+              style="color: #afabab"
+            >
+              CLOSE [X]
+            </button>
+
+            <!-- <div class="detail-media">
+                <img src="look-03-macro.jpg" alt="Tweed Texture Detail" class="macro-img">
+            </div> -->
+
+            <div class="detail-narrative">
+              <p>
+                A dialogue between weight and transparency. This look features a
+                hand-woven architectural tweed jacket paired with a floor-length
+                silk organza skirt. The raw edges of the tweed are deliberately
+                exposed to celebrate the artisanal process, while the organza is
+                layered in triple-tiers to create a ghostly, structural volume.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- look-04  -->
+      <section class="look-viewport mirrored" id="look-04">
+        <div class="detail-drawer drawer-left">
+          <div class="drawer-content">
+            <button
+              class="close-drawer"
+              onclick="toggleDetails('look-04')"
+              style="color: #afabab"
+            >
+              CLOSE [X]
+            </button>
+
+            <!-- <div class="detail-media">
+                <img src="look-04-macro.jpg" alt="Sculptural Fold Detail" class="macro-img">
+            </div> -->
+
+            <div class="detail-narrative">
+              <p>
+                An exploration of sculptural volume and internal support. This
+                look utilizes heavy-bonded crepe to create a rigid, defiant
+                silhouette that stands away from the body. The intricate
+                pleating at the waist is engineered to distribute weight evenly,
+                while the hidden corset structure ensures a sharp, architectural
+                finish that requires no external fastening.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-visual-frame" onclick="toggleDetails('look-04')">
+          <div class="image-inner">
+            <img
+              src="https://d28clw9klscyzj.cloudfront.net/legacy/assets/2021-03-02/files/04_-_MODEL_COMFORTABLE.jpg"
+              alt="Look 04 Full View"
+              class="main-img"
+            />
+          </div>
+
+          <div class="look-caption text-end">
+            <span class="l-num">04</span>
+            <span class="l-mat">BONDED CREPE / ENGINEERED PLEATS</span>
+          </div>
+
+          <!-- <div class="interact-prompt left-prompt">— VIEW CONSTRUCTION</div> -->
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer class="couture-footer-v2 container-fluid">
+      <div
+        class="container-fluid h-100 d-flex flex-column justify-content-between px-5"
+      >
+        <div class="row pt-3 md-pt-5 foote-title">
+          <div class="col-md-6">
+            <h3 class="footer-statement">AN UNINTERRUPTED DIALOGUE.</h3>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="mailto:access@brand.com" class="footer-cta-link"
+              >INITIATE ENQUIRY —</a
+            >
+          </div>
+        </div>
+
+        <div class="row py-3">
+          <div class="col-12 text-center">
+            <div class="footer-logo-zone">
+              <h1 class="footer-brand-logo">
+                M A I S O N &nbsp; D E &nbsp; C O U T U R E
+              </h1>
+
+              <div class="footer-pulse-container mt-4">
+                <span class="pulse-text">PARIS</span>
+                <div class="pulse-ring"></div>
+                <span class="pulse-text">LONDON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pb-4 align-items-end">
+          <div class="col-md-3">
+            <p class="meta-label">LEGAL</p>
+            <a href="#" class="meta-link">Privacy & Terms</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <a href="#home" class="elevate-trigger">
+              <span class="elevate-text">ELEVATE TO TOP</span>
+              <div class="elevate-bar-footer"></div>
+            </a>
+          </div>
+          <div class="col-md-3 text-md-end">
+            <p class="meta-label">ORIGIN</p>
+            <p class="meta-value">Est. 2026 — Atelier No. 01</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js-folder/collecton.js"></script>
+  </body>
+</html>

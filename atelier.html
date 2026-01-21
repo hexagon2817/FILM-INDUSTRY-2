@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css-folder/atelier.css" />
+  </head>
+  <body>
+    <div
+      id="nav-trigger"
+      style="position: fixed; top: 0; width: 100%; height: 80px; z-index: 1001"
+    ></div>
+
+    <nav id="main-nav">
+      <div class="navbar-nav">
+        <a class="nav-link" href="./index.html">Home</a>
+        <a class="nav-link" href="./collection.html">Collection</a>
+        <a class="nav-link" href="./atelier.html">Atelier</a>
+        <a class="nav-link" href="./philosophy.html">Philosophy</a>
+        <a class="nav-link" href="./contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Atelier hero section  -->
+
+      <section class="hero-section">
+        <div class="hero-video-container">
+          <video autoplay muted loop playsinline id="hero-video-full">
+            <source
+              src="./assets/colorful-spools-of-thread-in-mid-air-2023-video.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="video-overlay"></div>
+        </div>
+
+        <div class="hero-ui-wrapper">
+          <div class="top-spacer"></div>
+
+          <div class="hero-brand-bottom-left">
+            <h1 class="brand-name">BRAND NAME</h1>
+            <p class="collection-title">COLLECTION N°01</p>
+          </div>
+
+          <div class="hero-marker-left">
+            <p class="marker-text">STUDIO — LOG 01</p>
+          </div>
+
+          <div class="scroll-indicator">
+            <div class="mouse"></div>
+          </div>
+
+          <div class="hero-marker-right">
+            <p class="marker-text">
+              THE INTELLIGENCE <br />
+              OF THE HAND
+            </p>
+          </div>
+        </div>
+
+        <!-- mouse animation  -->
+        <div class="scroll-indicator">
+          <div class="mouse"></div>
+        </div>
+      </section>
+
+      <!-- looks-section -->
+    <section id="looks-section" class="narrative-viewport">
+  
+  <div class="narrative-header">
+    <h2 class="narrative-title">THE ARCHIVE</h2>
+    <p class="narrative-log">LOG_01 / SERIES_01</p>
+  </div>
+
+  <div class="narrative-container">
+    
+    <div class="narrative-row" id="n1">
+      <div class="narrative-visual">
+        <img src="https://d28clw9klscyzj.cloudfront.net/legacy/assets/2021-03-02/files/03_-_SURROUNDINGS.jpg" alt="Fabric Grain">
+        <div class="detail-panel">
+          <p>STRIATIONS OF RAW SILK. UNFILTERED. UNREFINED.</p>
+        </div>
+      </div>
+      
+      <div class="narrative-text-block">
+        <div class="text-inner">
+          <span class="spec-label">COMPOSITION</span>
+          <p class="spec-value">100% ORGANIC SILK</p>
+          <span class="spec-label">ORIGIN</span>
+          <p class="spec-value">COMO, ITALY</p>
+          <div class="editorial-fragment">
+            "The surface dictates the silhouette. We do not fight the grain; we follow it."
+          </div>
+          <button class="meta-btn" onclick="toggleNarrative('n1')">DETAILS +</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="narrative-row row-reverse" id="n2">
+      <div class="narrative-visual">
+        <img src="https://d28clw9klscyzj.cloudfront.net/legacy/assets/2021-03-02/files/04_-_MODEL_COMFORTABLE.jpg" alt="Sewing Hands">
+        <div class="detail-panel">
+          <p>THE INTELLIGENCE OF THE HAND. PINNED. MEASURED.</p>
+        </div>
+      </div>
+
+      <div class="narrative-text-block">
+        <div class="text-inner">
+          <span class="spec-label">PROCESS</span>
+          <p class="spec-value">HAND-DRAUGHTED PATTERNS</p>
+          <span class="spec-label">TIME</span>
+          <p class="spec-value">42 HOURS / CONSTRUCTION</p>
+          <div class="editorial-fragment">
+            "Error is the only proof of the human hand. We preserve the imperfections."
+          </div>
+          <button class="meta-btn" onclick="toggleNarrative('n2')">DETAILS +</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="narrative-row" id="n3">
+      <div class="narrative-visual">
+        <img src="https://d28clw9klscyzj.cloudfront.net/legacy/assets/2021-03-02/files/03_-_SURROUNDINGS.jpg" alt="Draped Cloth">
+        <div class="detail-panel">
+          <p>GRAVITY AS AN ARCHITECT. FALLING. HOLDING.</p>
+        </div>
+      </div>
+
+      <div class="narrative-text-block">
+        <div class="text-inner">
+          <span class="spec-label">TECHNIQUE</span>
+          <p class="spec-value">BIAS-CUT DRAPING</p>
+          <span class="spec-label">WEIGHT</span>
+          <p class="spec-value">320 GSM HEAVY CREPE</p>
+          <div class="editorial-fragment">
+            "Movement is the final test of architecture. If it cannot dance, it is a building, not a garment."
+          </div>
+          <button class="meta-btn" onclick="toggleNarrative('n3')">DETAILS +</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+      <!-- craft-details -->
+      <!-- <section class="craft-details container-fluid px-5 py-5">
+        <div class="row align-items-center mb-10vh">
+          <div class="col-md-5">
+            <div class="craft-img-wrap" data-scroll data-scroll-speed="1">
+              <img src="craft-01.jpg" alt="Draping process" class="img-fluid" />
+              <span class="img-caption">01 — THE DRAPE</span>
+            </div>
+          </div>
+          <div class="col-md-3 offset-md-1">
+            <h4 class="detail-h">DIMENSIONAL<br />SCULPTING</h4>
+            <p class="detail-p">
+              Garments are shaped directly on the form, allowing the weight of
+              the fabric to dictate the final silhouette.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center flex-row-reverse">
+          <div class="col-md-5">
+            <div class="craft-img-wrap" data-scroll data-scroll-speed="1.2">
+              <img src="craft-02.jpg" alt="Hand stitching" class="img-fluid" />
+              <span class="img-caption">02 — THE FINISH</span>
+            </div>
+          </div>
+          <div class="col-md-3 offset-md-1 text-md-end">
+            <h4 class="detail-h">SILENT<br />INTERIORS</h4>
+            <p class="detail-p">
+              Our signature hand-bound seams ensure that the interior of the
+              garment is as beautiful as the exterior.
+            </p>
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <!-- footer section  -->
+    <footer class="couture-footer-v2 container-fluid">
+      <div
+        class="container-fluid h-100 d-flex flex-column justify-content-between px-5"
+      >
+        <div class="row pt-3 md-pt-5 foote-title">
+          <div class="col-md-6">
+            <h3 class="footer-statement">AN UNINTERRUPTED DIALOGUE.</h3>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="mailto:access@brand.com" class="footer-cta-link"
+              >INITIATE ENQUIRY —</a
+            >
+          </div>
+        </div>
+
+        <div class="row py-3">
+          <div class="col-12 text-center">
+            <div class="footer-logo-zone">
+              <h1 class="footer-brand-logo">
+                M A I S O N &nbsp; D E &nbsp; C O U T U R E
+              </h1>
+
+              <div class="footer-pulse-container mt-4">
+                <span class="pulse-text">PARIS</span>
+                <div class="pulse-ring"></div>
+                <span class="pulse-text">LONDON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pb-4 align-items-end">
+          <div class="col-md-3">
+            <p class="meta-label">LEGAL</p>
+            <a href="#" class="meta-link">Privacy & Terms</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <a href="#home" class="elevate-trigger">
+              <span class="elevate-text">ELEVATE TO TOP</span>
+              <div class="elevate-bar-footer"></div>
+            </a>
+          </div>
+          <div class="col-md-3 text-md-end">
+            <p class="meta-label">ORIGIN</p>
+            <p class="meta-value">Est. 2026 — Atelier No. 01</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js-folder/atelier.js"></script>
+  </body>
+</html>
